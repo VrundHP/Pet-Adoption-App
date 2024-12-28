@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/dog.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.login-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.login-form div {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-container input:focus {
+    border-color: #FFFFFF;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
+.input-container input:focus::placeholder {
+    color: transparent;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #50C462;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #367A44;
+}
+
+.login-form button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #ff6347;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-form p {
+    color: #bbb;
+}
+
+.login-form a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Styling for the toggle-form text */
+.toggle-form p {
+    color: #ccc; /* Change this to the desired text color for "Don't have an account?" */
+    font-size: 14px; /* Adjust size if necessary */
+    margin-top: 10px; /* Add some spacing */
+  }
+  
+  /* Styling for the link inside the toggle-form */
+  .toggle-form a {
+    color: #50C462; /* Desired link color */
+    text-decoration: underline;
+    font-weight: bold; /* Make the link text stand out */
+  }
+  
+  /* Hover effect for the link */
+  .toggle-form a:hover {
+    color: #367A44; /* Darker green for hover effect */
+  }

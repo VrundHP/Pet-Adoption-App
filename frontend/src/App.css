@@ -1,0 +1,161 @@
+/* General Layout */
+#root {
+  width: 100%;                /* Full width */
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: calc(100% - 2in); /* 1-inch margins on both sides */
+  text-align: left;           /* Left align the content of the page */
+}
+body, #root {
+  display: block; /* Ensure no unintended flexbox behavior */
+  text-align: left; /* Align content to the left */
+}
+
+.App-content {
+  margin-top: 70px; /* Space below navbar */
+  padding: 1rem; /* Internal padding */
+}
+
+/* Top Bar Styling */
+.top-bar {
+  background-color: rgba(30, 30, 30, 0.8);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;        /* Align items horizontally and vertically */
+  border-radius: 2px;         /* Sharp corners, 2px radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;                /* Ensure top bar takes full width */
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.top-bar:hover {
+  transform: translateY(-5px);
+}
+
+.profile-section {
+  background-color: rgba(30, 30, 30, 0.8); /* Matches application status */
+  color: white;
+  padding: 2rem; /* Internal spacing */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin-bottom: 1rem; /* Space between profile and application status */
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.profile-section h1 {
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;        /* Align items vertically in the center */
+  margin-right: auto;         /* Push profile container to the left */
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Circular profile picture */
+  margin-right: 15px; /* Space between profile picture and text */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+  justify-content: center; /* Center-align text */
+}
+
+.profile-info p {
+  font-size: 1rem;
+  color: #bbb; /* Subtle color for the secondary text */
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Logout Container */
+.logout-container {
+  display: flex;
+  justify-content: flex-start;  /* Align logout button to the left */
+}
+
+.logout-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Push the button to the far right */
+}
+
+.logout-button:hover {
+  background-color: #777;
+}
+
+/* Status Section Styling */
+.status-section {
+  background-color: rgba(30, 30, 30, 0.8); /* Same background as profile section */
+  color: white;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin-top: 0;
+  width: 100%; /* Full width */
+  min-height: 200px; /* Make the box taller */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  position: relative; /* Allow absolute positioning for the title */
+}
+
+.status-section h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.status-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Center the "No active applications" text */
+.status-section .no-applications {
+  display: flex;
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  height: 100%;               /* Take full height of the status section */
+  width: 100%;                /* Take full width of the status section */
+  font-size: 1.4rem;          /* Larger font for visibility */
+  color: white;
+}
+
+/* Favorites & Pet Card Styling */
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Hearts Styling - Specific to Catalogue */
+.catalogue-container .favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
